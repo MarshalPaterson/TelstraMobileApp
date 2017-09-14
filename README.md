@@ -31,6 +31,9 @@ Main dependencies are:
 #### Example of JSON Push ####
 
 ```javascript
+
+Outage:
+
 { 
  "to": "/topics/3000",  
  "notification" : {
@@ -46,11 +49,50 @@ Main dependencies are:
  "title" : "Outage"
  }
 }
+
+Restored:
+
+{ 
+ "to": "/topics/Restored",  
+ "notification" : {
+ "body" : "Restored",
+ "content_available" : true,
+ "priority" : "Restored",
+ "title" : "Restored"
+ },
+ "data" : {
+ "body" : "Restored!",
+ "content_available" : true,
+ "priority" : "Restored",
+ "title" : "Restored"
+ }
+}
+
 ```
 
 Front screen example for Version 1.3.9
 ![alt text](https://github.com/santoshboms123/TelstraMobileApp/blob/master/FrontScreen.png)
 
+Structure: React Native, Redux and SF Mobile SDK
+
+![alt text](https://github.com/santoshboms123/TelstraMobileApp/blob/master/structure.png)
+
 #### Note: ####
 
 Force SDK and React Native versions are fixed, please review package.js
+
+The following software is needed to run the application from development:
+
+https://facebook.github.io/react-native/docs/getting-started.html
+
+https://nodejs.org/en/
+
+https://developer.android.com/studio/index.html
+
+https://code.visualstudio.com/
+
+https://github.com/jhen0409/react-native-debugger
+
+https://www.sourcetreeapp.com/
+
+https://brew.sh/
